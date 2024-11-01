@@ -9,3 +9,21 @@ OBJETS - PRÉPA 2 : Modélisation d'un chien
 3. Affiche dans la console le message "Tiens, un chat ! … aboie : …"
    (où … est le nom du chien et … utilise la méthode aboyer du chien pour le faire aboyer)
 */
+
+const chien = {
+    nom: "Tobby",
+    race: "Border Collie",
+    couleur: "bleu merle tricolore",
+
+    grogner() {
+        return "Grrr ! Grrr !";
+    },
+
+    aboyer() {
+        return "Wah ! Wah !";
+    }
+};
+
+console.log(`${chien.nom} est un ${chien.race} de couleur ${chien.couleur}`);
+
+console.log(`Tiens, un chat ! ${chien.nom} aboie : ${chien.aboyer()}`);
